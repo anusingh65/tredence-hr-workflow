@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'DM Sans', sans-serif; background: #0d0f14; color: #e2e8f0; overflow: hidden; }
+
+.react-flow__edge-path { stroke: #f97316 !important; stroke-width: 2 !important; }
+.react-flow__handle { width: 10px !important; height: 10px !important; background: #f97316 !important; border: 2px solid #0d0f14 !important; border-radius: 50% !important; }
+.react-flow__controls { background: #1a1f2e !important; border: 1px solid #252d3d !important; border-radius: 8px !important; overflow: hidden; }
+.react-flow__controls-button { background: #1a1f2e !important; border-bottom: 1px solid #252d3d !important; fill: #e2e8f0 !important; }
+.react-flow__controls-button:hover { background: #252d3d !important; }
+.react-flow__minimap { background: #141720 !important; border: 1px solid #252d3d !important; border-radius: 8px !important; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #141720; }
+::-webkit-scrollbar-thumb { background: #252d3d; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #f97316; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideIn { from { transform: translateX(20px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+.animate-fade-in { animation: fadeIn 0.2s ease-out; }
+.animate-slide-in { animation: slideIn 0.25s ease-out; }
